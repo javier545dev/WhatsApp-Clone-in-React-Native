@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {StyleSheet, View, Button, Text, Alert} from 'react-native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import {NavigationContainer} from '@react-navigation/native';
-import { useWindowDimensions } from "react-native"
 
 import ChatScreen from './ChatScreen';
 import StatusScreen from './StatusScreen';
