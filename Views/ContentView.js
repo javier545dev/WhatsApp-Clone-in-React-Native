@@ -13,6 +13,7 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default ContentView =() => {
 
+
     const Tab = createMaterialTopTabNavigator();
 
     return (
@@ -31,7 +32,7 @@ export default ContentView =() => {
                                             showIcon: true,
                                             iconStyle: { width: 20, height: 20, margin: 0, padding: 0},
                                             }}
-                                            >
+            >
                 <Tab.Screen
                     name="Camera"
                     component={Camara}
