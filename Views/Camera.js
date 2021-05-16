@@ -1,12 +1,12 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const StatusScreen = () => {
+const Camera = () => {
   return (
     <View>
-      <Text>StatusScreen</Text>
+      <Text>camera</Text>
     </View>
   )
 }
 
-export default StatusScreen
+export default Camera
