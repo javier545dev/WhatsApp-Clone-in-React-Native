@@ -11,10 +11,10 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <StatusBar backgroundColor="#075e54" barStyle="light-content" />
+      <StatusBar backgroundColor="#013227" barStyle="light-content" />
       <Stack.Navigator
         screenOptions={{
-          headerStyle: { backgroundColor: '#075e54' },
+          headerStyle: { backgroundColor: '#013227' },
           headerTintColor: 'white'
         }}
       >
@@ -23,7 +23,7 @@ export default function App() {
           component={ContentView}
           options={{
             headerStyle: {
-              backgroundColor: '#075e54',
+              backgroundColor: '#013227',
               elevation: 0
             }, //"eliminar el sombreado"
 

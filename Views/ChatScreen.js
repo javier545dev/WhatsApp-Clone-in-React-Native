@@ -13,7 +13,14 @@ const Layout = (props) => {
 
   return (
     <Card>
-      <View style={{ height: 70, padding: 3, flexDirection: 'row' }}>
+      <View
+        style={{
+          height: 70,
+          padding: 3,
+          flexDirection: 'row',
+          backgroundColor: '#18191a'
+        }}
+      >
         <View
           style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
         >
@@ -35,10 +42,10 @@ const Layout = (props) => {
             paddingLeft: 5
           }}
         >
-          <Text style={{ fontWeight: 'bold', color: 'black', fontSize: 17 }}>
+          <Text style={{ fontWeight: 'bold', color: 'white', fontSize: 17 }}>
             {props.username}
           </Text>
-          <Text>{props.mesV}</Text>
+          <Text style={{ color: 'gray' }}>{props.mesV}</Text>
         </View>
       </View>
     </Card>

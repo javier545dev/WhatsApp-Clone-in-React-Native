@@ -5,6 +5,7 @@ import StatusScreen from './StatusScreen'
 import CallScreen from './CallScreen'
 import Camera from './Camera'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import CustomTabNavigator from './CustomTabNavigator'
 
 export default ContentView = () => {
   const Tab = createMaterialTopTabNavigator()
@@ -13,33 +14,13 @@ export default ContentView = () => {
     <Tab.Navigator
       initialRouteName="Chats"
       lazy={true}
-      tabBarOptions={{
-        style: { elevation: 10 },
-        tabStyle: {
-          backgroundColor: '#075e54',
-          borderTopWidth: 0,
-          marginBottom: 4,
-          width: 100
-        },
-        indicatorContainerStyle: { backgroundColor: '#075e54' },
-        labelStyle: { fontWeight: 'bold' },
-        indicatorStyle: { backgroundColor: 'white' },
-        borderColor: 'white',
-        activeTintColor: 'white',
-        inactiveTintColor: 'grey',
-        showIcon: true,
-        iconStyle: { width: 20, height: 20, margin: 0, padding: 0 }
-      }}
+      tabBar={(props) => <CustomTabNavigator {...props} />}
     >
       <Tab.Screen
         name="Camera"
         component={Camera}
         options={{
-          adaptive: true,
-          tabStyle: {
-            width: 20
-          },
-          tabBarIcon: () => <Icon name="camera" color="white" size={22} />,
+          tabBarIcon: (color) => <Icon name="camera" color={color} size={22} />,
           tabBarLabel: () => null
         }}
       />
